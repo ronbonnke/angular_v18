@@ -1,0 +1,43 @@
+<div class="row mx-2">
+    <div class="col-4">
+        one way from .ts to .html
+    </div>
+    <div class="col-4">
+        one way from .ts to .html
+    </div>
+    <div class="col-4">
+        one way from <span class="text-danger">.html to .ts</span> 
+    </div>
+</div>
+
+
+<div class="row mx-3">
+    <div class="col-4 bg-success text-white">
+        INTERPOLATION
+        <h4>{{courseName}}</h4>
+        <div>{{rollNo}}</div>
+        <input type="text" value="{{courseName}}" placeholder="Enter text" />
+        <input type="{{inputTypeRadio}}" />
+    </div>
+    <div class="col-4">
+        PROPERTY BINDING
+        <div [class]="myClassName">
+            Danger
+        </div>
+        <input type="text" [value]="courseName" />
+    </div>
+    <div class="col-4">
+        EVENT BINDING
+        <div>
+            <button class="btn btn-success" (click)="showAlert('welcome Angular 18')">Show welcome</button>
+            <span (click)="showAlert('this is from span')">click me</span>
+            <button class="btn btn-success" (click)="changeCourseName()">Change course</button>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-4 m-3">
+        <input type="text" [(ngModel)]="courseName" /> - {{courseName}}
+    </div>
+</div>
