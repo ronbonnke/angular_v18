@@ -1,0 +1,76 @@
+<div class="mb-3 bg-secondary text-white rounded">
+    <h1>Structural Directive</h1>
+    <p> *ngClass, *ngStyle...</p>
+</div>
+<div class="row">
+    <div class="col-3">
+        <div class="p-3 text-center text-white"  [ngClass]="bgdiv1color">
+            <h4>Div-1</h4>
+        </div>
+    </div>
+    <div class="col-3">
+        <div class="bg-success p-3 text-center text-white">
+            <h4>Div-2</h4>
+        </div>
+    </div>
+    <div class="col-3">
+        <div class="bg-secondary p-3 text-center text-white">
+            <h4>Div-3</h4>
+        </div>
+    </div>
+    <div class="col-3">
+        <div class="bg-primary p-3 text-center text-white">
+            <h4>Div-4</h4>
+        </div>
+    </div>
+</div>
+<div class="row pt-3">
+    <div class="col-3 text-center">
+        <button  class="btn btn-danger" (click)="redClass()">make it red</button>
+        <button class="btn btn-primary mx-2" (click)="blueClass()">make it blue</button>
+    </div>
+    <div class="col-3 text-center">
+        <button  class="btn btn-success">Toggle</button>
+    </div>
+    <div class="col-3">
+        <div style="display: flex; align-items: center;"></div>
+        <input type="text"  placeholder="Num-1" class="w-50">
+        <input type="text"  placeholder="Num-2" class="w-50">
+    </div>
+    <div class="col-3">
+        <div style="display: flex; align-items: center;">
+            <input type="checkbox" class="w-50">
+            <select>
+                <option value="">Select Country</option>
+                <option value="India">India</option>
+                <option value="USA">USA</option>
+                <option value="SriLanka">SriLanka</option>
+            </select>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="row mx-2 pt-4">
+    <div class="col-5">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>SL.no</th>
+                    <th>Name</th>
+                    <th> city</th>
+                    <th>status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
